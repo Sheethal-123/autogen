@@ -1,0 +1,9 @@
+import csv
+
+# Read the csv file
+with open('data.csv', 'r') as file:
+    reader = csv.reader(file)
+    header = next(reader)  # Read the header row
+    print("Header row: ", header)
+
+print("Task completed.")

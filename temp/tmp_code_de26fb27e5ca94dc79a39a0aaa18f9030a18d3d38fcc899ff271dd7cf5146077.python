@@ -1,0 +1,17 @@
+# Define a dictionary to store species
+species = {
+    "Mammals": ["Humans", "Dogs", "Cats", "Bears", "Monkeys"],
+    "Birds": ["Eagles", "Parrots", "Sparrows", "Robins", "Owls"],
+    "Reptiles": ["Snakes", "Lizards", "Turtles", "Crocodiles", "Alligators"],
+    "Amphibians": ["Frogs", "Toads", "Salamanders", "Newts", "Caecilians"],
+    "Fish": ["Salmon", "Trout", "Tuna", "Swordfish", "Sharks"],
+    "Insects": ["Bees", "Butterflies", "Ants", "Grasshoppers", "Crickets"],
+    "Arachnids": ["Spiders", "Scorpions", "Ticks", "Mites"],
+    "Plants": ["Trees", "Flowers", "Grasses", "Mosses", "Ferns"]
+}
+
+# Print the species
+for category, species_list in species.items():
+    print(f"{category}:")
+    for species_name in species_list:
+        print(f"- {species_name}")

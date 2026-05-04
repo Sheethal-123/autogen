@@ -1,0 +1,12 @@
+# Define a function to calculate the number of members
+def calculate_members(group_size):
+    # Initialize the number of members
+    members = group_size
+    
+    # Return the number of members
+    return members
+
+# Call the function and print the result
+group_size = 15
+result = calculate_members(group_size)
+print("There are", result, "members travelling.")

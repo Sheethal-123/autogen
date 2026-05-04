@@ -1,0 +1,27 @@
+import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+
+# Read the CSV file
+df = pd.read_csv("titanic.csv")
+
+# Count the number of female passengers
+female_passengers = df[df['sex'] == 'female'].shape[0]
+
+# Print the result
+print("Number of female passengers:", female_passengers)
+
+# Plot a bar chart
+labels = ['Male', 'Female']
+male_count = df[df['sex'] == 'male'].shape[0]
+female_count = df[df['sex'] == 'female'].shape[0]
+values = [male_count, female_count]
+plt.bar(labels, values)
+plt.xlabel('Sex')
+plt.ylabel('Count')
+plt.title('Number of Male and Female Passengers')
+plt.savefig("output.png", bbox_inches="tight")
+plt.close()
+
+print("Completion message: The task has been completed successfully.")

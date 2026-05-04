@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the data from the 'data.csv' file
+df = pd.read_csv('data.csv')
+
+# Assuming the first column is the x-axis and the second column is the y-axis
+plt.figure(figsize=(10,6))
+plt.plot(df.iloc[:, 0], df.iloc[:, 1])
+
+# Add title and labels
+plt.title('Graph of Data')
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+
+# Save the graph as 'output.png'
+plt.savefig('output.png')
+
+# Show the graph
+plt.show()
+
+print("Graph generation task is completed.")

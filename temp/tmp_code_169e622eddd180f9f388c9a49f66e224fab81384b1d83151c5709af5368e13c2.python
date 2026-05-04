@@ -1,0 +1,22 @@
+# Define a dictionary to store species
+species = {
+    "Mammals": ["Humans", "Dogs", "Cats", "Bears", "Monkeys"],
+    "Birds": ["Eagles", "Parrots", "Sparrows", "Robins", "Owls"],
+    "Reptiles": ["Snakes", "Lizards", "Turtles", "Crocodiles", "Alligators"],
+    "Amphibians": ["Frogs", "Toads", "Salamanders", "Newts", "Caecilians"],
+    "Fish": ["Salmon", "Trout", "Tuna", "Swordfish", "Sharks"],
+    "Insects": ["Bees", "Butterflies", "Ants", "Grasshoppers", "Crickets"],
+    "Arachnids": ["Spiders", "Scorpions", "Ticks", "Mites"],
+    "Plants": ["Trees", "Flowers", "Grasses", "Mosses", "Ferns"]
+}
+
+# Calculate total species
+total_species = sum(len(species_list) for species_list in species.values())
+
+# Print the species and percentages
+for category, species_list in species.items():
+    species_count = len(species_list)
+    percentage = (species_count / total_species) * 100
+    print(f"{category}: {species_count} species ({percentage:.2f}% of total)")
+
+print(f"Total species: {total_species}")

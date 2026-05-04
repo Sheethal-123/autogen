@@ -1,0 +1,12 @@
+# Define a summary function
+def summarize():
+    print("Summary of tasks:")
+    print("1. Responded to initial query")
+    print("2. Provided example code")
+    print("3. Executed code and printed results")
+    print("4. Modified code to use a function")
+    print("5. Accepted input parameters")
+    print("6. Used a class to store group size")
+
+# Call the summary function
+summarize()

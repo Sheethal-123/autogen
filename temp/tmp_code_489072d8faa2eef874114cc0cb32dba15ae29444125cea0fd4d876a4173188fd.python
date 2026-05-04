@@ -1,0 +1,40 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the Titanic dataset
+def load_data(file_path):
+    try:
+        data = pd.read_csv(file_path)
+        return data
+    except Exception as e:
+        print(f"Failed to load data: {e}")
+        return None
+
+# Plot survived and died
+def plot_survived_died(data, output_file):
+    try:
+        # Assuming 'Survived' column is in your data where 1 means survived and 0 means died
+        survived_count = len(data[data['Survived'] == 1])
+        died_count = len(data[data['Survived'] == 0])
+        
+        # Creating a simple bar chart
+        plt.bar(['Survived', 'Died'], [survived_count, died_count])
+        plt.xlabel('Status')
+        plt.ylabel('Count')
+        plt.title('Survived vs Died')
+        plt.savefig(output_file)
+        plt.close()
+        print("Plot saved successfully.")
+    except Exception as e:
+        print(f"Failed to plot: {e}")
+
+# Main function
+def main():
+    file_path = 'titanic.csv'
+    output_file = 'output.png'
+    data = load_data(file_path)
+    if data is not None:
+        plot_survived_died(data, output_file)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Read the CSV file into a DataFrame
+df = pd.read_csv('data.csv')
+
+# Generate descriptive statistics
+summary = df.describe()
+
+# Print the summary
+print(summary)
+
+print("Task of summarizing the dataset is completed.")

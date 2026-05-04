@@ -1,0 +1,18 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Count the number of male and female passengers
+male_count = df[df['Sex'] == 'male'].shape[0]
+female_count = df[df['Sex'] == 'female'].shape[0]
+
+# Create a bar chart
+plt.bar(['Male', 'Female'], [male_count, female_count])
+plt.xlabel('Sex')
+plt.ylabel('Count')
+plt.title('Male and Female Passenger Count')
+plt.savefig('output.png')
+
+print("Task completed. Graph saved as output.png")

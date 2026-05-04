@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Read the csv file
+df = pd.read_csv('data.csv')
+
+# Assuming the column name for flower types is 'flower_type'
+# Extract the unique types of flowers
+unique_flowers = df['flower_type'].unique()
+
+# Print the unique types of flowers
+print("Unique types of flowers: ", unique_flowers)
+
+print("Task completed.")

@@ -1,0 +1,18 @@
+import pandas as pd
+
+# Load the data from the CSV file into a pandas DataFrame
+df = pd.read_csv('data.csv')
+
+# Print a summary of the data
+print(df.head())
+print(df.info())
+print(df.describe())
+
+# Print the summary of the dataset
+print("Dataset Summary:")
+print("Number of rows and columns:", df.shape)
+print("Column names:", df.columns)
+print("Datatype of each column:", df.dtypes)
+print("Missing values count:", df.isnull().sum())
+
+print("Task completed.")

@@ -1,0 +1,11 @@
+# Define a function to calculate the number of members
+def calculate_members():
+    # Initialize the number of members
+    members = 10
+    
+    # Return the number of members
+    return members
+
+# Call the function and print the result
+result = calculate_members()
+print("There are", result, "members travelling.")

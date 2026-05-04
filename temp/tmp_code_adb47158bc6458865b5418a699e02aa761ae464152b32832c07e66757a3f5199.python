@@ -1,0 +1,28 @@
+# Define a dictionary to store species
+species = {
+    "Mammals": ["Humans", "Dogs", "Cats", "Bears", "Monkeys"],
+    "Birds": ["Eagles", "Parrots", "Sparrows", "Robins", "Owls"],
+    "Reptiles": ["Snakes", "Lizards", "Turtles", "Crocodiles", "Alligators"],
+    "Amphibians": ["Frogs", "Toads", "Salamanders", "Newts", "Caecilians"],
+    "Fish": ["Salmon", "Trout", "Tuna", "Swordfish", "Sharks"],
+    "Insects": ["Bees", "Butterflies", "Ants", "Grasshoppers", "Crickets"],
+    "Arachnids": ["Spiders", "Scorpions", "Ticks", "Mites"],
+    "Plants": ["Trees", "Flowers", "Grasses", "Mosses", "Ferns"]
+}
+
+# Calculate total species and categories
+total_species = sum(len(species_list) for species_list in species.values())
+total_categories = len(species)
+
+# Calculate average species per category
+average_species = total_species / total_categories
+
+# Calculate standard deviation of species per category
+species_counts = [len(species_list) for species_list in species.values()]
+std_deviation = (sum((count - average_species) ** 2 for count in species_counts) / total_categories) ** 0.5
+
+# Print the results
+print(f"Total species: {total_species}")
+print(f"Total categories: {total_categories}")
+print(f"Average species per category: {average_species:.2f}")
+print(f"Standard deviation of species per category: {std_deviation:.2f}")

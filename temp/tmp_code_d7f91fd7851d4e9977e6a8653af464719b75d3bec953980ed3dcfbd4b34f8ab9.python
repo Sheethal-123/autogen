@@ -1,0 +1,18 @@
+import csv
+
+# Initialize an empty set to store unique flower types
+unique_flowers = set()
+
+# Read the csv file
+with open('data.csv', 'r') as file:
+    reader = csv.reader(file)
+    next(reader)  # Skip the header row
+    for row in reader:
+        # Assuming the flower type is in the first column
+        flower_type = row[0]
+        unique_flowers.add(flower_type)
+
+# Print the unique types of flowers
+print("Unique types of flowers: ", unique_flowers)
+
+print("Task completed.")

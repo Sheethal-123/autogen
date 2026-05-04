@@ -1,0 +1,18 @@
+# Define a dictionary to store tasks
+tasks = {
+    "Initial Response": ["Responded to initial query"],
+    "Code Examples": ["Provided example code", "Executed code and printed results", "Modified code to use a function", "Accepted input parameters", "Used a class to store group size"]
+}
+
+# Calculate total tasks
+total_tasks = sum(len(task_list) for task_list in tasks.values())
+
+# Print the tasks and statistics
+for category, task_list in tasks.items():
+    task_count = len(task_list)
+    percentage = (task_count / total_tasks) * 100
+    print(f"{category}: {task_count} tasks ({percentage:.2f}% of total)")
+    for task in task_list:
+        print(f"- {task}")
+
+print(f"Total tasks: {total_tasks}")

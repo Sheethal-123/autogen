@@ -1,0 +1,16 @@
+# Sample dataset
+data = [1, 2, 3, 4, 5]
+
+# Calculate the mean of the dataset
+mean = sum(data) / len(data)
+
+# Calculate the median of the dataset
+data.sort()
+if len(data) % 2 == 0:
+    median = (data[len(data) // 2 - 1] + data[len(data) // 2]) / 2
+else:
+    median = data[len(data) // 2]
+
+# Print the summary
+print("Mean:", mean)
+print("Median:", median)

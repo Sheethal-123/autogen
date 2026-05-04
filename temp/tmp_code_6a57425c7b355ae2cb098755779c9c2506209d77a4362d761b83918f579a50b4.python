@@ -1,0 +1,11 @@
+# Define a dictionary to store tasks
+tasks = {
+    "Initial Response": ["Responded to initial query"],
+    "Code Examples": ["Provided example code", "Executed code and printed results", "Modified code to use a function", "Accepted input parameters", "Used a class to store group size"]
+}
+
+# Print the tasks and count
+for category, task_list in tasks.items():
+    print(f"{category}: {len(task_list)} tasks")
+    for task in task_list:
+        print(f"- {task}")

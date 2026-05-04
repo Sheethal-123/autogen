@@ -1,0 +1,14 @@
+# Define a class to represent a group
+class Group:
+    def __init__(self, size):
+        self.size = size
+
+    def calculate_members(self):
+        return self.size
+
+# Create an instance of the Group class
+group = Group(20)
+
+# Call the calculate_members method and print the result
+result = group.calculate_members()
+print("There are", result, "members travelling.")

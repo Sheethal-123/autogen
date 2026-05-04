@@ -1,0 +1,44 @@
+# Install matplotlib library
+import sys
+import subprocess
+
+# Check if matplotlib is installed
+try:
+    import matplotlib
+except ImportError:
+    print("Installing matplotlib library...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
+
+# Import matplotlib library
+import matplotlib.pyplot as plt
+
+# Sample dataset
+data = [1, 2, 3, 4, 5]
+
+# Histogram
+plt.hist(data, bins=5, edgecolor='black')
+plt.title('Histogram of the Dataset')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()
+
+# Line plot
+plt.plot(data, marker='o')
+plt.title('Line Plot of the Dataset')
+plt.xlabel('Index')
+plt.ylabel('Value')
+plt.show()
+
+# Bar chart
+plt.bar(range(len(data)), data)
+plt.title('Bar Chart of the Dataset')
+plt.xlabel('Index')
+plt.ylabel('Value')
+plt.show()
+
+# Scatter plot
+plt.scatter(range(len(data)), data)
+plt.title('Scatter Plot of the Dataset')
+plt.xlabel('Index')
+plt.ylabel('Value')
+plt.show()

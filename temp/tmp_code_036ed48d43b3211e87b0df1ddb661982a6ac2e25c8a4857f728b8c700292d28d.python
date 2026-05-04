@@ -1,0 +1,9 @@
+# Define a dictionary to store tasks
+tasks = {
+    "Initial Response": "Responded to initial query",
+    "Code Examples": "Provided example code, Executed code and printed results, Modified code to use a function, Accepted input parameters, Used a class to store group size"
+}
+
+# Print the tasks
+for category, task in tasks.items():
+    print(f"{category}: {task}")
