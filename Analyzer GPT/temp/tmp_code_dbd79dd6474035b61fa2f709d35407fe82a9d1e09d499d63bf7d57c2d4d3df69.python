@@ -1,0 +1,11 @@
+import pandas as pd
+
+# Read the CSV file
+data = pd.read_csv('data.csv')
+
+# Count the number of male and female passengers
+male_count = len(data[data['Sex'] == 'male'])
+female_count = len(data[data['Sex'] == 'female'])
+
+print("Male Passengers: ", male_count)
+print("Female Passengers: ", female_count)
