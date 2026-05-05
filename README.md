@@ -1,10 +1,10 @@
-# 🤖 Analyzer GPT — AI-Powered Data Analysis Agent
+# Analyzer GPT — AI-Powered Data Analysis Agent
 
 Analyzer GPT is a cloud-native AI application that enables users to perform data analysis on CSV files using natural language. Built using a multi-agent architecture powered by AutoGen, the system automatically generates Python code, executes it safely inside Docker, and returns insights, visualizations, and reports in real time.
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 Traditional data analysis requires manual coding and technical expertise. Analyzer GPT simplifies this by allowing users to:
 
@@ -17,24 +17,24 @@ The system leverages **LLM-powered agents + code execution** to create an end-to
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
-* 🔍 Natural language → Python code generation
-* 🤖 Multi-agent collaboration (AutoGen)
-* 🐳 Secure Docker-based code execution
-* 📊 Automated visualization generation (`output.png`)
-* 💬 Interactive Streamlit chat interface
-* ⚡ Real-time execution and feedback loop
+* Natural language → Python code generation
+* Multi-agent collaboration (AutoGen)
+* Secure Docker-based code execution
+* Automated visualization generation (`output.png`)
+* Interactive Streamlit chat interface
+* Real-time execution and feedback loop
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture](Analyzer%20GPT/assets/architecture.png)
 
 ---
 
-## 🧩 Architecture Explanation
+## Architecture Explanation
 
 The system follows a **multi-agent orchestration pipeline**:
 
@@ -75,7 +75,7 @@ The system follows a **multi-agent orchestration pipeline**:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category        | Tools             |
 | --------------- | ----------------- |
@@ -92,7 +92,7 @@ Dependencies:
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 analyzer-gpt/
@@ -121,7 +121,7 @@ analyzer-gpt/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -165,7 +165,7 @@ GROQ_API_KEY=your_api_key_here
 
 ---
 
-## ▶️ Running the Application
+## Running the Application
 
 Make sure Docker is running.
 
@@ -175,7 +175,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🧪 How It Works
+## How It Works
 
 1. Upload a CSV file
 2. Enter a natural language query
@@ -185,7 +185,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 💡 Example Queries
+## Example Queries
 
 ```text
 Show me number of rows and columns
@@ -201,7 +201,7 @@ Find missing values in each column
 
 ---
 
-## 📊 Example Use Case
+## Example Use Case
 
 For a Titanic dataset:
 
@@ -213,7 +213,7 @@ Can you give me a graph of survived and died?
 ✔ Executes inside Docker
 ✔ Displays visualization
 
-## 📸 Demo
+## Demo
 
 ### User Interface
 ![UI](Analyzer%20GPT/assets/ui.png)
@@ -223,7 +223,7 @@ Can you give me a graph of survived and died?
 ![Output](Analyzer%20GPT/assets/output.png)
 ---
 
-## 🎯 Why This Project Stands Out
+## Why This Project Stands Out
 
 This project demonstrates:
 
@@ -237,7 +237,7 @@ This project demonstrates:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * Support Excel / JSON files
 * Add persistent storage (S3 / DB)
@@ -248,7 +248,7 @@ This project demonstrates:
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This project executes AI-generated code. Use in a controlled environment. Docker isolation is recommended for safety.
 
